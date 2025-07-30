@@ -1,0 +1,53 @@
+{
+  "name": "pyassistpro",
+  "displayName": "PyAssistPro",
+  "description": "Your Code Assistant for Python Programming in VSCode.",
+  "version": "0.0.2",
+  "publisher": "ForkAndFlow",
+  "engines": {
+    "vscode": "^1.102.0"
+  },
+  "main": "./out/extension.js",
+  "icon": "logo.png",
+  "keywords": [
+    "python",
+    "code",
+    "assistant",
+    "snippet",
+    "boilerplate",
+    "autocomplete",
+    "json",
+    "developer",
+    "productivity"
+  ],
+  "activationEvents": [
+    "onCommand:pyassistpro.insertBoilerplate"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "pyassistpro.insertBoilerplate",
+        "title": "Insert Python Boilerplate"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.102.0",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.25.1",
+    "typescript": "^5.8.3"
+  }
+}

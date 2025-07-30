@@ -1,0 +1,30 @@
+{
+  "Python For Loop": {
+    "prefix": "forloop",
+    "body": [
+      "for ${1:i} in range(${2:10}):",
+      "\tprint(${1:i})"
+    ],
+    "description": "Insert a Python for loop"
+  },
+  "Python Main Method": {
+    "prefix": "mainfunc",
+    "body": [
+      "def main():",
+      "\tprint(\"Hello World\")",
+      "",
+      "if __name__ == \"__main__\":",
+      "\tmain()"
+    ],
+    "description": "Insert a Python main method"
+  },
+  "Python Class": {
+    "prefix": "pyclass",
+    "body": [
+      "class ${1:MyClass}:",
+      "\tdef __init__(self):",
+      "\t\tpass"
+    ],
+    "description": "Insert a Python class"
+  }
+}
