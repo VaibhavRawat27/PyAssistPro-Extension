@@ -42,3 +42,7 @@ Examples:
 
 ### ✅ For Auto Completion
 Start typing keywords like `for`, `if`, `def` in a Python file and see suggestions pop up.
+
+---
+
+Find our Extension here: [https://marketplace.visualstudio.com/publishers/ForkAndFlow](https://marketplace.visualstudio.com/items?itemName=ForkAndFlow.pyassistpro)
